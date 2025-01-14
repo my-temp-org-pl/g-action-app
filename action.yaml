@@ -1,0 +1,13 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: action
+
+name: "CloudBees Platform - Example Action"
+description: "Prints a message"
+
+runs:
+  using: "composite"
+  steps:
+    - name: Print
+      uses: docker://ubuntu:latest
+      run: |
+        echo "this is from scm-test-action"
