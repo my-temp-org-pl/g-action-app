@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: simulate job
         uses: docker://alpine:latest
-        run: 'sleep 10'
+        run: 'sleep 40'
